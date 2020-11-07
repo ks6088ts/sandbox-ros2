@@ -6,3 +6,4 @@ services:
       dockerfile: ./docker/focal/Dockerfile
     container_name: focal
     tty: true
+    command: bash
