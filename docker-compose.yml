@@ -1,0 +1,8 @@
+version: '3'
+services:
+  focal:
+    build:
+      context: .
+      dockerfile: ./docker/focal/Dockerfile
+    container_name: focal
+    tty: true
