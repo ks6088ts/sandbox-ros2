@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: ./docker/focal/Dockerfile
+      args:
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTPS_PROXY}
     container_name: focal
     tty: true
     command: bash
