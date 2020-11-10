@@ -1,5 +1,11 @@
 FROM ubuntu:20.04
 
+ARG HTTP_PROXY=""
+ARG HTTPS_PROXY=""
+
+ENV http_proxy ${HTTP_PROXY}
+ENV https_proxy ${HTTPS_PROXY}
+
 # keyboard-configuration の設定画面で止まらないようにするため
 # https://qiita.com/munky69rock/items/4c3a076fe496045de5f1
 ARG DEBIAN_FRONTEND=noninteractive
